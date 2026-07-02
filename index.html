@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경북소방</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+/* 헤더 */
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #d32f2f;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 메인 */
+.main {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1581091870622-1e7e8d8b7f33') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.main h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 섹션 */
+section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* 회사소개 */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* 사업영역 */
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* 실적 */
+.portfolio li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+/* 문의 */
+.contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+/* 푸터 */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">경북소방</div>
+    <nav>
+        <a href="#about">회사소개</a>
+        <a href="#services">사업영역</a>
+        <a href="#portfolio">실적</a>
+        <a href="#contact">문의</a>
+    </nav>
+</header>
+
+<div class="main">
+    <div>
+        <h1>안전을 설계하고, 생명을 지킵니다</h1>
+        <p>경북소방은 전문 기술과 책임감으로 최상의 소방 서비스를 제공합니다.</p>
+        <a href="#services" class="btn">사업영역 보기</a>
+    </div>
+</div>
+
+<section id="about" class="about">
+    <h2 class="section-title">회사소개</h2>
+    <p>
+        경북소방은 소방설비 설계, 시공, 점검까지 전문적으로 수행하는 기업입니다.
+        고객의 생명과 재산을 보호하는 것을 최우선 가치로 삼습니다.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">사업영역</h2>
+    <div class="services">
+        <div class="card">
+            <h3>소방 설비 공사</h3>
+            <p>전문 설비 구축</p>
+        </div>
+        <div class="card">
+            <h3>소방 점검</h3>
+            <p>정기 안전 점검</p>
+        </div>
+        <div class="card">
+            <h3>유지보수</h3>
+            <p>신속한 관리 서비스</p>
+        </div>
+        <div class="card">
+            <h3>안전 컨설팅</h3>
+            <p>맞춤형 솔루션 제공</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">실적</h2>
+    <ul class="portfolio">
+        <li>○○ 공장 소방설비 구축</li>
+        <li>○○ 빌딩 점검 계약</li>
+        <li>○○ 아파트 유지보수</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">문의</h2>
+    <form>
+        <input type="text" placeholder="이름">
+        <input type="text" placeholder="연락처">
+        <textarea placeholder="문의내용"></textarea>
+        <button type="submit">보내기</button>
+    </form>
+</section>
+
+<footer>
+    <p>경북소방</p>
+    <p>주소: 경상북도 ○○시</p>
+    <p>TEL: 000-0000-0000</p>
+    <p>© 2026 경북소방 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
